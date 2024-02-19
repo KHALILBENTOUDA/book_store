@@ -13,6 +13,7 @@ const Nav = () => {
     const [tok, settok] = useState(false)
     const [userData, setuserData] = useState([])
     const [fistLater, setfistLater] = useState([])
+    const [use, setuse] = useState([])
 
     useEffect(() => {
       if (localStorage.getItem("token")) {
@@ -25,8 +26,6 @@ const Nav = () => {
         const later=data.email
         setfistLater(later.toUpperCase())
     }
-
-
 
 
     },[])
